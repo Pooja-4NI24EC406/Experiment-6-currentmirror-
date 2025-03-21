@@ -9,9 +9,8 @@
 <br>Analysis of CD</br>
 <br>calculation & comparison tables</br>
 <br>Result, Inference, conclusion</br>
-**Bold Text**aim
-
-
+<h3>AIM</h3>
+<b>Design and analyze current mirror circuit as active load in amplifier circuit</b>
 
   
 
