@@ -17,15 +17,18 @@
 <br><b>1.</b> Design for Av>-10v/v, VDD=1.8v, P<=1mw
 <br>Itotal=P/VDD   and  Itotal=Iref+Ix
 <br>design for the current mirror ratio----> 1:1 and 1:2 
+
 <br><b>2.</b>Analyze the circuit current mirror--->DC analysis
-<br><b>3. case1:a)</b>Lmin=180nm  (W/L)=x
-<br><b>b)</b>l=500nm              (W/L)=x
-<br><b>c)</b>L=1um                (W/L)=x
+
+<br><b>3. case1:a)</b>Lmin=180nm      (W/L)=x
+<br>             <b>b)</b>l=500nm     (W/L)=x
+<br>             <b>c)</b>L=1um       (W/L)=x
 <br>Avalyze the current mirroring maintain (W/L) same as first design
 <br><b>4.</b>Transient and AC analysis
 <br> Maximum output swing
 <br>BW
-<b>Vary the current mirror ratio and analyze the current copying/mirroring</b>
+
+<br><b>Vary the current mirror ratio and analyze the current copying/mirroring</b>
 
 <b>Circuit daigram 2</b>
 
