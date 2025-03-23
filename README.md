@@ -23,10 +23,11 @@
 ![image](https://github.com/user-attachments/assets/f7bc1780-deb8-42f6-8ee8-711e1b93b35d)
 
 
-<h3><b>Why Current Mirrors are used</b></h3>
+<h3><b>Why Current source</b></h3>
 Current Mirrors are particularly useful in the integrated circuits, for biasing the amplifiers. The advantage of biasing the amplifiers with the current source is that it provides a high voltage gain and good biasing stability. This current source can be generated using a simple PMOS transistor or using a MOS transistor in cascode configuration (to achieve higher gain) as shown in figure
 
-![image](https://github.com/user-attachments/assets/7b6ea27d-1a86-4f89-903a-c7267eba43e4)
+![image](https://github.com/user-attachments/assets/f6266441-6905-4fd3-b473-c9703af54836)
+
 
 
 But this type of MOS current source  is susceptible to the change in the biasing voltage and the change in temperature. Moreover, the integrated circuit may contain hundred or thousand of such amplifiers. To bias all the amplifiers with precise biasing voltage is another challenge. So, to overcome all these problems, in integrated circuits, one stable current source is fabricated within IC, and using the current mirror the multiple copies of the stable current source is generated (which can be used to bias the amplifiers)
@@ -61,7 +62,10 @@ It shows the implementation of current mirror using the PMOS transistors. In PMO
 
 <h3>AIM</h3>
 <b>Design and analyze current mirror circuit as active load in amplifier circuit</b>
-<br><b>Circuit daigram</b>
+
+<br><b>Circuit daigram1</b>
+
+![image](https://github.com/user-attachments/assets/d78da15e-9d51-4c8b-b3c1-73b958d48fff)
 
 
 <br><b>1.</b> Design for Av>-10v/v, VDD=1.8v, P<=1mw
@@ -69,8 +73,8 @@ It shows the implementation of current mirror using the PMOS transistors. In PMO
 <br>design for the current mirror ratio----> 1:1 and 1:2 
 <br><b>2.</b>Analyze the circuit current mirror--->DC analysis
 <br><b>3. case1:a)</b>Lmin=180nm      (W/L)=x
-<br>             <b>b)</b>l=500nm     (W/L)=x
-<br>             <b>c)</b>L=1um       (W/L)=x
+           <br> <b>b)</b>l=500nm     (W/L)=x
+          <br> <b>c)</b>L=1um       (W/L)=x
 <br>Avalyze the current mirroring maintain (W/L) same as first design
 <br><b>4.</b>Transient and AC analysis
 <br> Maximum output swing
@@ -80,10 +84,19 @@ It shows the implementation of current mirror using the PMOS transistors. In PMO
 
 <b>Circuit daigram 2</b>
 
-
+![image](https://github.com/user-attachments/assets/2e480a47-2a14-4beb-bc18-3c8dadcbd15a)
 
 Design the differential Amplifier using the same design specification as experiment 3 ---> differencial amplifier, Perform DC analysis, transient analysis and AC analysis
 
+<h3><b>REQUIRED COMPONENTS with their SPECIFICATION</b></h3>
+
+| *Component*   | *Label* | *Specification/Description* |
+|---------------|----------|----------------------------|
+| *MOSFETs*   | M1, M2  | Matched PMOSFETs for current mirroring |
+| *MOSFET*    | M3      | Acts as an active load (common source amplifier) |
+| *Power Supply* | VDD | 1.8V  |
+| *Current Source* | I_ref | Reference current source |
+| *Input voltage* | Vin 0.5V| Used for biasing (values depend on design) |
 
 
 
