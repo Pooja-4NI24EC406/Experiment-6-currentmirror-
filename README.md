@@ -1,14 +1,13 @@
 # Experiment-6-currentmirror
 <h1>CURRENT MIRROR</h1>     
 <p> In the IC,the Mosfet amplifiers are baised using the CURRENT SOURCE. Typically in the IC's this current mirror is used as a current source. The main advantage of the baising the amplifier with the constant current is that it provides high voltage gain and it also improves the baising stability.</p>
-<h3><b>CONTENTS</b></h2>
-<br>AIM of the circuit</br>
-<br>Components required with circuit</br>
-<br>Theory</br>
-<br>Applications, working principle</br>
-<br>Analysis of CD</br>
-<br>calculation & comparison tables</br>
-<br>Result, Inference, conclusion</br>
+<h3><b>CONTENTS</b></h3>
+<br><b>THEORY</b>
+<br><b>WORKING & APPLICATIONS</b>
+<br><b>AIM</b>
+<br><b>LTSpice SIMULATION</b>
+<br><b>CALCULATION AND COMPARION TABLE</b>
+<br><b>Result, Inference, conclusion</b>
 
 <h3><b>THEORY</b></h3>
 <br>The current mirror is an analog circuit that senses the reference current and generates the copy or number of copies of the reference current, with the same characteristics. The replicated current is as stable as the reference current source. The replicated current could be the same as the reference current (Icopy = IREF), or it could be either multiple or fraction of the reference current.
@@ -58,6 +57,14 @@ It shows the implementation of current mirror using the PMOS transistors. In PMO
 
 ![image](https://github.com/user-attachments/assets/9115b085-bc37-4da3-905d-9bcbe34ad911)
 
+<h3><b>APPLICATIONS</b></h3>
+<br>Biasing circuits
+<br>Analog signal processing
+<br>voltage references
+<br>digital to analog converter
+<br>operational amplifier
+<br>sensor circuits
+
 
 
 <h3>AIM</h3>
@@ -97,6 +104,94 @@ Design the differential Amplifier using the same design specification as experim
 | *Power Supply* | VDD | 1.8V  |
 | *Current Source* | I_ref | Reference current source |
 | *Input voltage* | Vin 0.5V| Used for biasing (values depend on design) |
+
+<h3><b>LTSpice simulation</b></h3>
+<br><b>DESIGN FOR THE CURRENT MIRROR RATIO 1:1</b>
+<h4><b>CIRCUIT DAIGRAM 01</b></h4>
+
+
+
+<br>M1 Lenght=M2 Lenght= 180nm
+<br>M1 Width= M2 Width = 10um (bcz for 1:1 ratio)
+<br><b>Theoritical calculation</b>
+
+![image](https://github.com/user-attachments/assets/1f6cded6-3c83-4304-88e6-ccf01a33403b)
+
+<h4><b>DC Analysis</b></h4>
+
+
+
+<br>Vout=VDD/2
+<br>   =1.8/2=0.9V(Theoritically)
+<br>From DC Analysis
+<br>
+
+
+Vout=Vx
+
+
+<br>here the circuit is diode connected so by inspection it is working in saturation region. And for NMOS source is connected to ground and now it become Vg = Vgs3 i.e, <b>INPUT VOLTAGE</b> is 0.5V (By calculation) it is saturation region so Id=1/2Kn(w/l)Vov^2 
+
+
+<h4><b>TRANSIENT ANALYSIS</b></h4>
+
+
+
+
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.45V</b>
+
+<h4><b>AC ANALYSIS</b></h4>
+
+
+
+<br>The GAIN from the LTSpice simulation of this circuit is 28.4dB
+<br>28.4-3=25.4dB
+<br>BANDWIDTH=FH-FL
+<br>BANDWIDTH=756.67MHz
+
+
+<br><b>DESIGN FOR THE CURRENT MIRROR RATIO 1:2</b>
+<h4><b>CIRCUIT DAIGRAM 02</b></h4>
+
+
+<br>M1 Lenght= M2 Lenght= 180nm
+<br>M1 Width=10um and M2 Width = 20um (bcz for 1:2 ratio)
+
+<h4><b>DC Analysis</b></h4>
+
+
+
+<br>Vout=VDD/2
+<br>   =1.8/2=0.9V(Theoritically)
+<br>From DC Analysis
+<br>
+
+<br>here Vout is less than Vx
+<br>Itotal=Iref+Ix
+<br>Iref=
+<br>Ix=
+
+
+
+
+<h4><b>TRANSIENT ANALYSIS</b></h4>
+
+
+
+
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.5V</b>
+
+<h4><b>AC ANALYSIS</b></h4>
+
+
+
+<br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
+<br>29.5-3=26.5dB
+<br>BANDWIDTH=FH-FL
+<br>BANDWIDTH=756.67MHz
+
+
+
 
 
 
