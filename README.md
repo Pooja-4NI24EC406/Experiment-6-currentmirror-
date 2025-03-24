@@ -1,3 +1,5 @@
+
+
 # Experiment-6-currentmirror
 <h1>CURRENT MIRROR</h1>     
 <p> In the IC,the Mosfet amplifiers are baised using the CURRENT SOURCE. Typically in the IC's this current mirror is used as a current source. The main advantage of the baising the amplifier with the constant current is that it provides high voltage gain and it also improves the baising stability.</p>
@@ -111,6 +113,8 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>CIRCUIT DAIGRAM 01</b></h4>
 
+![image](https://github.com/user-attachments/assets/05cecad0-c296-434b-9147-f43f1ab4db4b)
+
    
 <br>M1 Lenght= M2 Lenght= 180nm
 <br>M1 Width=10um and M2 Width = 10um (bcz for 1:1 ratio)
@@ -135,12 +139,15 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>TRANSIENT ANALYSIS</b></h4>
 
+![image](https://github.com/user-attachments/assets/d56792e4-4407-4b36-af3c-b8d29a13bfdd)
 
 
 
 <br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.5V</b>
 
 <h4><b>AC ANALYSIS</b></h4>
+
+![image](https://github.com/user-attachments/assets/214e61fe-bd11-49e1-baab-84e917dd1a4d)
 
 
 
