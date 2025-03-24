@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/2312066b-d40d-4063-a13f-e00a85ecb159)
 
 # Experiment-6-currentmirror
 <h1>CURRENT MIRROR</h1>     
@@ -145,15 +145,15 @@ Design the differential Amplifier using the same design specification as experim
 ![image](https://github.com/user-attachments/assets/d56792e4-4407-4b36-af3c-b8d29a13bfdd)
 
 
-<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.5V</b>
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.45V</b>
 
 <h4><b>AC ANALYSIS</b></h4>
 
 ![image](https://github.com/user-attachments/assets/214e61fe-bd11-49e1-baab-84e917dd1a4d)
 
 
-<br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
-<br>29.5-3=26.5dB
+<br>The GAIN from the LTSpice simulation of this circuit is 27dB
+<br>27-3=24dB
 <br>BANDWIDTH=FH-FL=756.67M-0
 <br>BANDWIDTH=756.67MHz
 
@@ -195,7 +195,8 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>AC ANALYSIS</b></h4>
 
-![image](https://github.com/user-attachments/assets/bac51caf-8219-4cb3-b59e-26eba8cf8fd0)
+![image](https://github.com/user-attachments/assets/db46f8c0-2af1-43c9-a2cd-946acc77adac)
+
 
 
 <br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
@@ -208,6 +209,8 @@ Design the differential Amplifier using the same design specification as experim
 
 <br>L=500nm
 <h4><b>CIRCUIT DAIGRAM 03</b></h4>
+
+![Uploading image.png…]()
 
 
    
@@ -244,7 +247,7 @@ Design the differential Amplifier using the same design specification as experim
 
 ![image](https://github.com/user-attachments/assets/39e9f227-d3cd-4c02-b0c8-516db20dbd91)
 
-<br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
+<br>The GAIN from the LTSpice simulation of this circuit is 29.1dB
 <br>29.1-3=26.1dB
 <br>BANDWIDTH=FH-FL=756.67M-0
 <br>BANDWIDTH=756.67MHz
