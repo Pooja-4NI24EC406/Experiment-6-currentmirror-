@@ -285,6 +285,20 @@ Design the differential Amplifier using the same design specification as experim
 <br>BANDWIDTH=756.67MHz
 
 
+<h3><b> Comparison Between 1:1 and 1:2 Current Mirrors</b></h3>
+
+| Feature              | **1:1 Current Mirror** | **1:2 Current Mirror** |
+|----------------------|----------------------|----------------------|
+| **Current Ratio (I_out / I_ref)** | 1:1 (I_out = I_ref) | 1:2 (I_out = 2 × I_ref) |
+| **Number of Output Branches** | 1 | 1 (but with 2× current) |
+| **MOSFETs Used** | 2 (1 reference, 1 output) | 3 (1 reference, 2 output) |
+| **Design Complexity** | Simple | Slightly more complex |
+| **Accuracy** | High, since both transistors are identical | Less accurate due to mismatches |
+| **Power Dissipation** | Lower | Higher due to increased output current |
+| **Application** | Low-power circuits | Circuits needing higher output current |
+
+
+
 <h3><b>Comparison of MOSFETs with Different Channel Lengths in AC & Transient Analysis</b> </h3>
 
 | **Parameter**               | **L = 180 nm**    | **L = 500 nm**    | **L = 1 µm**      |
