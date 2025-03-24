@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/2312066b-d40d-4063-a13f-e00a85ecb159)
 
 # Experiment-6-currentmirror
 <h1>CURRENT MIRROR</h1>     
