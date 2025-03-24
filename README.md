@@ -4,7 +4,8 @@
 <h3><b>CONTENTS</b></h3>
 <br><b>THEORY</b>
 <br><b>WORKING & APPLICATIONS</b>
-<br><b>AIM</b>
+<br><b>AIM OF THE CIRCUIT</b>
+<br><b>REQUIRED COMPONENTS with there SPECIFICATION</b>
 <br><b>LTSpice SIMULATION</b>
 <br><b>CALCULATION AND COMPARION TABLE</b>
 <br><b>Result, Inference, conclusion</b>
@@ -107,15 +108,12 @@ Design the differential Amplifier using the same design specification as experim
 
 <h3><b>LTSpice simulation</b></h3>
 <br><b>DESIGN FOR THE CURRENT MIRROR RATIO 1:1</b>
+
 <h4><b>CIRCUIT DAIGRAM 01</b></h4>
 
-
-
-<br>M1 Lenght=M2 Lenght= 180nm
-<br>M1 Width= M2 Width = 10um (bcz for 1:1 ratio)
-<br><b>Theoritical calculation</b>
-
-![image](https://github.com/user-attachments/assets/1f6cded6-3c83-4304-88e6-ccf01a33403b)
+   
+<br>M1 Lenght= M2 Lenght= 180nm
+<br>M1 Width=10um and M2 Width = 10um (bcz for 1:1 ratio)
 
 <h4><b>DC Analysis</b></h4>
 
@@ -126,11 +124,13 @@ Design the differential Amplifier using the same design specification as experim
 <br>From DC Analysis
 <br>
 
+<br>Vout= Vx
+<br>Itotal=Iref+Ix
+<br>Iref=
+<br>Ix=
+<br>Iref=Ix
+<br> we can observe that PMOS are diode connected so by inspection it is working in saturation region
 
-Vout=Vx
-
-
-<br>here the circuit is diode connected so by inspection it is working in saturation region. And for NMOS source is connected to ground and now it become Vg = Vgs3 i.e, <b>INPUT VOLTAGE</b> is 0.5V (By calculation) it is saturation region so Id=1/2Kn(w/l)Vov^2 
 
 
 <h4><b>TRANSIENT ANALYSIS</b></h4>
@@ -138,14 +138,14 @@ Vout=Vx
 
 
 
-<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.45V</b>
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.5V</b>
 
 <h4><b>AC ANALYSIS</b></h4>
 
 
 
-<br>The GAIN from the LTSpice simulation of this circuit is 28.4dB
-<br>28.4-3=25.4dB
+<br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
+<br>29.5-3=26.5dB
 <br>BANDWIDTH=FH-FL
 <br>BANDWIDTH=756.67MHz
 
@@ -189,6 +189,97 @@ Vout=Vx
 <br>29.5-3=26.5dB
 <br>BANDWIDTH=FH-FL
 <br>BANDWIDTH=756.67MHz
+
+
+<br><h3><b>Analyze the current mirroring maintaining (W/L) same as first design</h3>
+<br>L=500nm
+<h4><b>CIRCUIT DAIGRAM 03</b></h4>
+
+   
+<br>M1 Lenght= M2 Lenght= 1um
+<br>M1 Width=10um and M2 Width = 10um (bcz for 1:1 ratio)
+
+<h4><b>DC Analysis</b></h4>
+
+
+
+<br>Vout=VDD/2
+<br>   =1.8/2=0.9V(Theoritically)
+<br>From DC Analysis
+<br>
+
+<br>Vout= Vx
+<br>Itotal=Iref+Ix
+<br>Iref=
+<br>Ix=
+<br>Iref=Ix
+
+
+
+
+<h4><b>TRANSIENT ANALYSIS</b></h4>
+
+
+
+
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.3V</b>
+
+<h4><b>AC ANALYSIS</b></h4>
+
+
+
+<br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
+<br>29.5-3=26.5dB
+<br>BANDWIDTH=FH-FL
+<br>BANDWIDTH=756.67MHz
+
+
+
+<br>L=500nm
+<h4><b>CIRCUIT DAIGRAM 01</b></h4>
+
+   
+<br>M1 Lenght= M2 Lenght= 500nm
+<br>M1 Width=10um and M2 Width = 10um (bcz for 1:1 ratio)
+
+<h4><b>DC Analysis</b></h4>
+
+
+
+<br>Vout=VDD/2
+<br>   =1.8/2=0.9V(Theoritically)
+<br>From DC Analysis
+<br>
+
+<br>Vout= Vx
+<br>Itotal=Iref+Ix
+<br>Iref=
+<br>Ix=
+<br>Iref=Ix
+
+
+
+
+<h4><b>TRANSIENT ANALYSIS</b></h4>
+
+
+
+
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.3V</b>
+
+<h4><b>AC ANALYSIS</b></h4>
+
+
+
+<br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
+<br>29.5-3=26.5dB
+<br>BANDWIDTH=FH-FL
+<br>BANDWIDTH=756.67MHz
+
+
+
+
+
 
 
 
