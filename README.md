@@ -304,9 +304,9 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>DC Analysis</b></h4>
 Current through M1 and M3 is same (0.37mA)
-vout and vx has been incresed from the previous case.
+vout and vx has been incresed from the previous case.(1:2)
 
-![image](https://github.com/user-attachments/assets/2dab7b15-bab7-4bc1-b376-c8f37731c069)
+![image](https://github.com/user-attachments/assets/46156751-455d-4765-9b18-a220a4cbda56)
 
 
 The gain is 15dB. For 1:3 ratio current Mirror
@@ -322,14 +322,14 @@ since the I_TOTAL is remines same P_TOTAL also remains same. Here ,The aspect ra
 
 <h4><b>TRANSIENT ANALYSIS</b></h4>
 
-![image](https://github.com/user-attachments/assets/c8ecedb2-a057-4000-b0a3-9c5e6ffe5ad2)
+![image](https://github.com/user-attachments/assets/a6ffa32b-948e-44fd-9447-6f6385027d05)
 
 <br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 710mV</b>
 
 
 <h4><b>AC ANALYSIS</b></h4>
 
-![image](https://github.com/user-attachments/assets/f84ac4d1-cff6-4ad5-b5ee-c0b57a80aa2e)
+![image](https://github.com/user-attachments/assets/553b02e9-0906-4236-8f22-f33f69fa5c53)
 
 <br>The GAIN from the LTSpice simulation of this circuit is 12dB
  For 1:3 ratio current Mirror
