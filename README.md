@@ -168,6 +168,7 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>DC Analysis</b></h4>
 
+![image](https://github.com/user-attachments/assets/aa6fb0e7-52a6-4244-aac7-d5369c105f0c)
 
 
 <br>Vout=VDD/2
@@ -219,18 +220,17 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>DC Analysis</b></h4>
 
+![image](https://github.com/user-attachments/assets/1bc816ad-5451-4dc1-92f8-726301488d12)
 
 
 <br>Vout=VDD/2
 <br>   =1.8/2=0.9V(Theoritically)
 <br>From DC Analysis
-<br>
-
-<br>Vout= Vx
+<br>Vout=0.921105
 <br>Itotal=Iref+Ix
-<br>Iref=
-<br>Ix=
-<br>Iref=Ix
+<br>Iref=0.277mA
+<br>Ix=0.271mA
+<br>Iref=Ix(approxiametely)
 
 
 
@@ -267,17 +267,16 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>DC Analysis</b></h4>
 
+![image](https://github.com/user-attachments/assets/b571a153-b132-4742-bd6b-cd1fe1be81d9)
 
 
 <br>Vout=VDD/2
 <br>   =1.8/2=0.9V(Theoritically)
 <br>From DC Analysis
-<br>
-
-<br>Vout= Vx
+<br>Vout=0.291503
 <br>Itotal=Iref+Ix
-<br>Iref=
-<br>Ix=
+<br>Iref=277uA
+<br>Ix=0.27777
 <br>Iref=Ix
 
 
@@ -301,6 +300,35 @@ Design the differential Amplifier using the same design specification as experim
 <br>BANDWIDTH=FH-FL
 <br>BANDWIDTH=756.67MHz
 
+<br><b>Vary the current mirror ratio and analyze the current copying/mirroring</b>
+
+<h4><b>DC Analysis</b></h4>
+
+![image](https://github.com/user-attachments/assets/57b96799-2d14-42b4-842f-46613134d6f6)
+
+<br>Vout=1.19361V
+<br>Itotal=Iref+Ix
+<br>Iref=277uA
+<br>Ix=0.831mA
+
+
+<h4><b>TRANSIENT ANALYSIS</b></h4>
+
+![image](https://github.com/user-attachments/assets/3d386ac5-b7a1-4cb6-884b-1ed4944ece21)
+
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.6V</b>
+
+
+<h4><b>AC ANALYSIS</b></h4>
+
+![image](https://github.com/user-attachments/assets/3c8c551d-6a95-4677-912d-f97c4044434b)
+
+<br>The GAIN from the LTSpice simulation of this circuit is 28dB
+
+
+
+
+
 <b>B)Circuit daigram 2 Differencial pair with current source</b>
 
 ![image](https://github.com/user-attachments/assets/e7009940-e07d-40a1-8c8d-dd28fe7dd540)
@@ -309,13 +337,20 @@ Design the differential Amplifier using the same design specification as experim
 
 ![image](https://github.com/user-attachments/assets/722973fd-b103-4365-bea3-134f6f7ef7e2)
 
+
+
 <h3>TRANSIENT ANALYSIS</h3>
 
 ![image](https://github.com/user-attachments/assets/a87be8bc-7db8-4f47-a118-09a458903958)
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.9V</b>
+
+
 
 <h3>AC ANALYSIS</h3>
 
+![image](https://github.com/user-attachments/assets/9db4f418-0185-4105-a534-2aed9265adc3)
 
+<br>The GAIN from the LTSpice simulation of this circuit is 30dB
 
 
 
@@ -347,9 +382,13 @@ Design the differential Amplifier using the same design specification as experim
 | **Vx** | 0.967276V     | Medium          | Low             |
 
 <h3>INFERENCE</h3>
-
-
-
+<br>1.Here we can observe that Iref is exactly equal to ID IN CASE OF 1:1 RAatio in some cases current mirroring doesnt happened accurately due to channel length modulation
+<br>2Current Matching: The output current follows the reference current, ensuring accurate current replication.
+<br>3.Output voltage swing increases as the channel length increases.
+<br>4.The gain increases and decreasing  with higher current mirror ratios, reaching a maximum of 31.344 dB for a 2:1 ratio, demonstrating the impact of active load selection in amplifier circuits.
+<br>5.Differential pair with current source amplifier  implementation using a current mirror as an active load, with a gain is 30dB.
+<br>6.Despite different current mirror ratios, the total power dissipation remains within the 1mW design constraint, validating the circuit’s low-power operation.
+<br>7. Lower supply voltages limit output voltage swing and overall circuit performance.
 
 
 
