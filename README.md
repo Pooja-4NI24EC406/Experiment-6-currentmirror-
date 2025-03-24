@@ -72,7 +72,7 @@ It shows the implementation of current mirror using the PMOS transistors. In PMO
 <h3>AIM</h3>
 <b>Design and analyze current mirror circuit as active load in amplifier circuit</b>
 
-<br><b>Circuit daigram1</b>
+<br><b>A)Circuit daigram1</b>
 
 ![image](https://github.com/user-attachments/assets/d78da15e-9d51-4c8b-b3c1-73b958d48fff)
 
@@ -91,7 +91,7 @@ It shows the implementation of current mirror using the PMOS transistors. In PMO
 
 <br><b>Vary the current mirror ratio and analyze the current copying/mirroring</b>
 
-<b>Circuit daigram 2</b>
+<b>B)Circuit daigram 2</b>
 
 ![image](https://github.com/user-attachments/assets/2e480a47-2a14-4beb-bc18-3c8dadcbd15a)
 
@@ -300,6 +300,27 @@ Design the differential Amplifier using the same design specification as experim
 <br>30-3=27dB
 <br>BANDWIDTH=FH-FL
 <br>BANDWIDTH=756.67MHz
+
+<b>B)Circuit daigram 2</b>
+
+![image](https://github.com/user-attachments/assets/e7009940-e07d-40a1-8c8d-dd28fe7dd540)
+
+<h3>DC ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/722973fd-b103-4365-bea3-134f6f7ef7e2)
+
+<h3>TRANSIENT ANALYSIS</h3>
+
+![image](https://github.com/user-attachments/assets/a87be8bc-7db8-4f47-a118-09a458903958)
+
+<h3>AC ANALYSIS</h3>
+
+
+
+
+
+
+
 
 
 <h3><b> Comparison Between 1:1 and 1:2 Current Mirrors</b></h3>
