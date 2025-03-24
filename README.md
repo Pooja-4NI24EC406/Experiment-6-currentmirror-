@@ -113,7 +113,8 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>CIRCUIT DAIGRAM 01</b></h4>
 
-![image](https://github.com/user-attachments/assets/05cecad0-c296-434b-9147-f43f1ab4db4b)
+![image](https://github.com/user-attachments/assets/2ea6a758-a22b-4153-b9ed-1cc18f0279d2)
+
 
    
 <br>M1 Lenght= M2 Lenght= 180nm
@@ -121,17 +122,19 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>DC Analysis</b></h4>
 
+![image](https://github.com/user-attachments/assets/6695cb06-a86e-43a3-8bd2-5f4a84cf4ecf)
+
 
 
 <br>Vout=VDD/2
-<br>   =1.8/2=0.9V(Theoritically)
+<br>Vout =1.8/2=0.9V(Theoritically)
 <br>From DC Analysis
-<br>
-
-<br>Vout= Vx
+<br>Vout=0.987608
+<br>Vx=0.967276
+<br>Vout= Vx(approxiamety)
 <br>Itotal=Iref+Ix
-<br>Iref=
-<br>Ix=
+<br>Iref=0.277m
+<br>Ix=0.277m
 <br>Iref=Ix
 <br> we can observe that PMOS are diode connected so by inspection it is working in saturation region
 
@@ -142,13 +145,11 @@ Design the differential Amplifier using the same design specification as experim
 ![image](https://github.com/user-attachments/assets/d56792e4-4407-4b36-af3c-b8d29a13bfdd)
 
 
-
 <br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.5V</b>
 
 <h4><b>AC ANALYSIS</b></h4>
 
 ![image](https://github.com/user-attachments/assets/214e61fe-bd11-49e1-baab-84e917dd1a4d)
-
 
 
 <br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
