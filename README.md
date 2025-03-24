@@ -301,7 +301,7 @@ Design the differential Amplifier using the same design specification as experim
 <br>BANDWIDTH=FH-FL
 <br>BANDWIDTH=756.67MHz
 
-<b>B)Circuit daigram 2</b>
+<b>B)Circuit daigram 2 Differencial pair with current source</b>
 
 ![image](https://github.com/user-attachments/assets/e7009940-e07d-40a1-8c8d-dd28fe7dd540)
 
@@ -322,18 +322,17 @@ Design the differential Amplifier using the same design specification as experim
 
 
 
-
 <h3><b> Comparison Between 1:1 and 1:2 Current Mirrors</b></h3>
 
 | Feature              | **1:1 Current Mirror** | **1:2 Current Mirror** |
 |----------------------|----------------------|----------------------|
-| **Current Ratio (I_out / I_ref)** | 1:1 (I_out = I_ref) | 1:2 (I_out = 2 × I_ref) |
+| **Current Ratio (Iout/Iref)** | 1:1 (Iout = Iref) | 1:2 (Iout = 2 × Iref) |
 | **Number of Output Branches** | 1 | 1 (but with 2× current) |
-| **MOSFETs Used** | 2 (1 reference, 1 output) | 3 (1 reference, 2 output) |
-| **Design Complexity** | Simple | Slightly more complex |
-| **Accuracy** | High, since both transistors are identical | Less accurate due to mismatches |
-| **Power Dissipation** | Lower | Higher due to increased output current |
-| **Application** | Low-power circuits | Circuits needing higher output current |
+| **Vout** | 0.987608|0.9986  |
+| **Vx**| 0.967276| 1.03471|
+| **Iref** | 0.277mA | 0.183mA |
+| **Ix** | 0.277mA | 0.36667mA |
+| **Gain** | 24dB | 26.5dB |
 
 
 
@@ -344,15 +343,10 @@ Design the differential Amplifier using the same design specification as experim
 | **Width (W)**              | 10 µm           | 10 µm           | 10 µm           |
 | **Length (L)**             | 180 nm          | 500 nm          | 1 µm            |
 | **W/L Ratio**              | 55.56           | 20              | 10              |
-| **Output Resistance (ro)** | Low             | Medium          | High            |
-| **Channel Modulation**      | High            | Medium          | Low             |
-| **Gain (Av = gm * ro) (AC Analysis)** | Low (~10-20 V/V) | Medium (~50-100 V/V) | High (~200-500 V/V) |
-| **Output Swing (Vout max - Vout min) (Transient Analysis)** | Small (~0.5V to 1V) | Medium (~1V to 2V) | High (~2V to 3V) |
-| **Short Channel Effects**  | Significant     | Moderate        | Negligible      |
-| **Output Voltage Swing**   | Low             | Medium          | High            |
-| **Application**            | High-speed circuits | General-purpose | Precision analog circuits |
+| **VOUT** |    0.987608V       | Medium          | High            |
+| **Vx** | 0.967276V     | Medium          | Low             |
 
-
+<h3>INFERENCE</h3>
 
 
 
