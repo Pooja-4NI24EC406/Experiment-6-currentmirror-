@@ -285,7 +285,20 @@ Design the differential Amplifier using the same design specification as experim
 <br>BANDWIDTH=756.67MHz
 
 
+<h3><b>Comparison of MOSFETs with Different Channel Lengths in AC & Transient Analysis</b> </h3>
 
+| **Parameter**               | **L = 180 nm**    | **L = 500 nm**    | **L = 1 µm**      |
+|----------------------------|------------------|------------------|------------------|
+| **Width (W)**              | 10 µm           | 10 µm           | 10 µm           |
+| **Length (L)**             | 180 nm          | 500 nm          | 1 µm            |
+| **W/L Ratio**              | 55.56           | 20              | 10              |
+| **Output Resistance (ro)** | Low             | Medium          | High            |
+| **Channel Modulation**      | High            | Medium          | Low             |
+| **Gain (Av = gm * ro) (AC Analysis)** | Low (~10-20 V/V) | Medium (~50-100 V/V) | High (~200-500 V/V) |
+| **Output Swing (Vout max - Vout min) (Transient Analysis)** | Small (~0.5V to 1V) | Medium (~1V to 2V) | High (~2V to 3V) |
+| **Short Channel Effects**  | Significant     | Moderate        | Negligible      |
+| **Output Voltage Swing**   | Low             | Medium          | High            |
+| **Application**            | High-speed circuits | General-purpose | Precision analog circuits |
 
 
 
