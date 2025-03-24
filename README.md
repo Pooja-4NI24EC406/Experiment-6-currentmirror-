@@ -154,12 +154,14 @@ Design the differential Amplifier using the same design specification as experim
 
 <br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
 <br>29.5-3=26.5dB
-<br>BANDWIDTH=FH-FL
+<br>BANDWIDTH=FH-FL=756.67M-0
 <br>BANDWIDTH=756.67MHz
 
 
 <br><b>DESIGN FOR THE CURRENT MIRROR RATIO 1:2</b>
 <h4><b>CIRCUIT DAIGRAM 02</b></h4>
+
+![image](https://github.com/user-attachments/assets/1abeb4fb-559f-4e52-a017-0a2b06d036a3)
 
 
 <br>M1 Lenght= M2 Lenght= 180nm
@@ -172,18 +174,20 @@ Design the differential Amplifier using the same design specification as experim
 <br>Vout=VDD/2
 <br>   =1.8/2=0.9V(Theoritically)
 <br>From DC Analysis
-<br>
+<br>Vout=0.99867V
+<br>VX=1.03471
 
 <br>here Vout is less than Vx
 <br>Itotal=Iref+Ix
-<br>Iref=
-<br>Ix=
+<br>Iref=0.0001833A
+<br>Ix=0.000366661A
 
 
 
 
 <h4><b>TRANSIENT ANALYSIS</b></h4>
 
+![image](https://github.com/user-attachments/assets/f0d77ef0-e99b-437d-81e8-7c05627ccf5b)
 
 
 
@@ -191,6 +195,7 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>AC ANALYSIS</b></h4>
 
+![image](https://github.com/user-attachments/assets/bac51caf-8219-4cb3-b59e-26eba8cf8fd0)
 
 
 <br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
@@ -200,12 +205,14 @@ Design the differential Amplifier using the same design specification as experim
 
 
 <br><h3><b>Analyze the current mirroring maintaining (W/L) same as first design</h3>
+
 <br>L=500nm
 <h4><b>CIRCUIT DAIGRAM 03</b></h4>
 
+
    
-<br>M1 Lenght= M2 Lenght= 1um
-<br>M1 Width=10um and M2 Width = 10um (bcz for 1:1 ratio)
+<br>M1 Lenght= M2 Lenght= 500n
+<br>M1 Width=10um and M2 Width = 10um 
 
 <h4><b>DC Analysis</b></h4>
 
@@ -227,28 +234,33 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>TRANSIENT ANALYSIS</b></h4>
 
+![image](https://github.com/user-attachments/assets/8c848f66-2ef0-47b9-b9d8-5b58aeb33cdc)
 
 
 
-<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.3V</b>
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.4V</b>
 
 <h4><b>AC ANALYSIS</b></h4>
 
-
+![image](https://github.com/user-attachments/assets/39e9f227-d3cd-4c02-b0c8-516db20dbd91)
 
 <br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
-<br>29.5-3=26.5dB
-<br>BANDWIDTH=FH-FL
+<br>29.1-3=26.1dB
+<br>BANDWIDTH=FH-FL=756.67M-0
 <br>BANDWIDTH=756.67MHz
 
 
 
-<br>L=500nm
-<h4><b>CIRCUIT DAIGRAM 01</b></h4>
+<br>FOR L=1um
+<h4><b>CIRCUIT DAIGRAM 04</b></h4>
+
+
+![image](https://github.com/user-attachments/assets/4eeebfb8-df18-4c0b-ad67-3144ab922bd3)
+
 
    
-<br>M1 Lenght= M2 Lenght= 500nm
-<br>M1 Width=10um and M2 Width = 10um (bcz for 1:1 ratio)
+<br>M1 Lenght= M2 Lenght= 1um
+<br>M1 Width=10um and M2 Width = 10um 
 
 <h4><b>DC Analysis</b></h4>
 
@@ -270,17 +282,19 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>TRANSIENT ANALYSIS</b></h4>
 
+![image](https://github.com/user-attachments/assets/af17edf9-6065-42f8-a303-d55d1222a42b)
 
 
 
-<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.3V</b>
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.1V</b>
 
 <h4><b>AC ANALYSIS</b></h4>
 
+![image](https://github.com/user-attachments/assets/7808a723-493b-45c2-8493-59d57373c782)
 
 
 <br>The GAIN from the LTSpice simulation of this circuit is 29.5dB
-<br>29.5-3=26.5dB
+<br>30-3=27dB
 <br>BANDWIDTH=FH-FL
 <br>BANDWIDTH=756.67MHz
 
