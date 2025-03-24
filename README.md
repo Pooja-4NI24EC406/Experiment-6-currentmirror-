@@ -195,7 +195,7 @@ Design the differential Amplifier using the same design specification as experim
 
 <h4><b>AC ANALYSIS</b></h4>
 
-![image](https://github.com/user-attachments/assets/db46f8c0-2af1-43c9-a2cd-946acc77adac)
+![image](https://github.com/user-attachments/assets/10b9ae8e-18e8-4718-ba9e-1d44b403022e)
 
 
 
@@ -210,7 +210,8 @@ Design the differential Amplifier using the same design specification as experim
 <br>L=500nm
 <h4><b>CIRCUIT DAIGRAM 03</b></h4>
 
-![Uploading image.png…]()
+
+![image](https://github.com/user-attachments/assets/db46f8c0-2af1-43c9-a2cd-946acc77adac)
 
 
    
