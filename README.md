@@ -303,27 +303,37 @@ Design the differential Amplifier using the same design specification as experim
 <br><b>Vary the current mirror ratio and analyze the current copying/mirroring</b>
 
 <h4><b>DC Analysis</b></h4>
+Current through M1 and M3 is same (0.37mA)
+vout and vx has been incresed from the previous case.
 
-![image](https://github.com/user-attachments/assets/57b96799-2d14-42b4-842f-46613134d6f6)
+![image](https://github.com/user-attachments/assets/2dab7b15-bab7-4bc1-b376-c8f37731c069)
 
+
+The gain is 15dB. For 1:3 ratio current Mirror
+let I_REF=0.138mA and I_X=3I_REF =0.4166mA
+
+since the I_TOTAL is remines same P_TOTAL also remains same. Here ,The aspect ratio of MOSFET M1 is thrice of M3. (W/L) of MOSFET 1= 300u/180n.
+(W/L) of MOSFET 2= 100u/180n
 <br>Vout=1.19361V
 <br>Itotal=Iref+Ix
-<br>Iref=277uA
-<br>Ix=0.831mA
+<br>Iref=0.185m
+<br>Ix=0.3703mA
 
 
 <h4><b>TRANSIENT ANALYSIS</b></h4>
 
-![image](https://github.com/user-attachments/assets/3d386ac5-b7a1-4cb6-884b-1ed4944ece21)
+![image](https://github.com/user-attachments/assets/c8ecedb2-a057-4000-b0a3-9c5e6ffe5ad2)
 
-<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 1.6V</b>
+<br>The Vin is given as DC offset value that is 0.526,20m,1K hz frequency so for that values we can observe the <b>output voltage is 710mV</b>
 
 
 <h4><b>AC ANALYSIS</b></h4>
 
-![image](https://github.com/user-attachments/assets/3c8c551d-6a95-4677-912d-f97c4044434b)
+![image](https://github.com/user-attachments/assets/f84ac4d1-cff6-4ad5-b5ee-c0b57a80aa2e)
 
-<br>The GAIN from the LTSpice simulation of this circuit is 28dB
+<br>The GAIN from the LTSpice simulation of this circuit is 12dB
+ For 1:3 ratio current Mirror
+I_REF=0.138mA and I_X=3I_REF =0.4166mA
 
 
 
@@ -331,12 +341,13 @@ Design the differential Amplifier using the same design specification as experim
 
 <b>B)Circuit daigram 2 Differencial pair with current source</b>
 
-![image](https://github.com/user-attachments/assets/e7009940-e07d-40a1-8c8d-dd28fe7dd540)
+![image](https://github.com/user-attachments/assets/e7be475f-1ce0-46cf-8f0e-87ffb3f8be5b)
+
+
 
 <h3>DC ANALYSIS</h3>
 
-![image](https://github.com/user-attachments/assets/722973fd-b103-4365-bea3-134f6f7ef7e2)
-
+![image](https://github.com/user-attachments/assets/e32fabc3-7f87-4bb0-94f1-a7d8640c1c9a)
 
 
 <h3>TRANSIENT ANALYSIS</h3>
